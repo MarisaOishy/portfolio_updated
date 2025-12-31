@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oishy | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar fixed w-full z-50">
+    <h1 class="logo">Oishy</h1>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+        <div class="text-center md:text-left fade">
+            <h1>Hi, I’m Oishy</h1>
+            <p>Frontend Developer • CSE Graduate</p>
+
+            <div class="flex gap-6 justify-center md:justify-start my-8">
+                <i data-feather="code" class="icon"></i>
+                <i data-feather="layout" class="icon"></i>
+                <i data-feather="cpu" class="icon"></i>
+            </div>
+
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+
+        <div class="flex justify-center fade">
+            <img src="assets/images/profile.jpg"
+                 class="w-64 h-64 rounded-full object-cover border-4 border-white shadow-2xl animate-float">
+        </div>
+    </div>
+</section>
+
+<section id="about" class="fade">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-card">
+        <p>
+            I am a Computer Science graduate passionate about frontend development.
+            I enjoy building clean, responsive, and visually engaging user interfaces
+            using modern web technologies.
+        </p>
+    </div>
+</section>
+
+<section id="skills" class="fade">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+        <div class="skill-card glass">
+            <i data-feather="code" class="icon"></i>
+            <h3>HTML5</h3>
+            <p>Semantic & accessible markup</p>
+        </div>
+
+        <div class="skill-card glass">
+            <i data-feather="layout" class="icon"></i>
+            <h3>CSS / Tailwind</h3>
+            <p>Responsive & modern UI</p>
+        </div>
+
+        <div class="skill-card glass">
+            <i data-feather="cpu" class="icon"></i>
+            <h3>JavaScript</h3>
+            <p>DOM & interactions</p>
+        </div>
+
+        <div class="skill-card glass">
+            <i data-feather="git-branch" class="icon"></i>
+            <h3>Git & GitHub</h3>
+            <p>Version control</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="fade">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+        <div class="project-card glass">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                A visually rich portfolio built with HTML, Tailwind CSS,
+                and JavaScript featuring animations and form validation.
+            </p>
+        </div>
+
+        <div class="project-card glass">
+            <h3>Landing Page UI</h3>
+            <p>
+                A responsive landing page with modern layout, hover effects,
+                and mobile-first optimization.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="fade">
+    <h2 class="section-title">Contact Me</h2>
+
+    <form id="contactForm" class="contact-card">
+        <input id="name" type="text" placeholder="Your Name">
+        <input id="email" type="email" placeholder="Your Email">
+        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+        <p id="error"></p>
+    </form>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

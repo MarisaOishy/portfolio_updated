@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #1b062a, #2b0a3d, #4b1b6d, #7b4ca0);
+    background-attachment: fixed;
+    color: #f5e9ff;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(43, 10, 61, 0.7);
+    backdrop-filter: blur(14px);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #e9d5ff;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+/* FIXED SECTION TITLES */
+.section-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    letter-spacing: 1.2px;
+}
+
+/* Hero */
+#home h1 {
+    font-size: 60px;
+}
+
+#home p {
+    font-size: 18px;
+    margin: 16px 0 32px;
+}
+
+/* Button */
+.btn {
+    padding: 14px 36px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #c084fc, #a855f7);
+    color: #1b062a;
+    font-weight: 700;
+}
+
+/* About */
+.about-card {
+    max-width: 820px;
+    margin: auto;
+    padding: 42px;
+    border-radius: 26px;
+    background: linear-gradient(
+        135deg,
+        rgba(192,132,252,0.3),
+        rgba(88,28,135,0.45)
+    );
+    backdrop-filter: blur(22px);
+}
+
+.about-card p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* Glass Cards */
+.glass {
+    padding: 36px;
+    border-radius: 26px;
+    background: linear-gradient(
+        135deg,
+        rgba(192,132,252,0.35),
+        rgba(88,28,135,0.55)
+    );
+    backdrop-filter: blur(22px);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+    transition: transform 0.4s;
+}
+
+.glass:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card h3,
+.project-card h3 {
+    font-size: 20px;
+    margin-top: 18px;
+}
+
+/* Contact */
+.contact-card {
+    max-width: 520px;
+    margin: auto;
+    padding: 36px;
+    border-radius: 26px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 16px 18px;
+    border-radius: 14px;
+    border: none;
+    font-size: 16px;
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 16px;
+    border-radius: 999px;
+    border: none;
+    font-weight: 700;
+    background: linear-gradient(135deg, #c084fc, #a855f7);
+    color: #1b062a;
+}
+
+/* Icons & Animation */
+.icon {
+    width: 42px;
+    height: 42px;
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
