@@ -238,3 +238,32 @@ body.light textarea {
     }
 }
 
+/* CONTACT ICONS */
+.contact-icons {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+.contact-icons a {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.contact-icons a:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.3);
+}
+
+.contact-icons svg {
+    width: 22px;
+    height: 22px;
+    stroke: white;
+}
