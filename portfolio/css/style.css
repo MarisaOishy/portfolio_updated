@@ -267,3 +267,24 @@ body.light textarea {
     height: 22px;
     stroke: white;
 }
+/* === SUCCESS TOAST === */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #c084fc, #a855f7);
+    color: #1b062a;
+    padding: 16px 26px;
+    border-radius: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.4s ease;
+    z-index: 9999;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
